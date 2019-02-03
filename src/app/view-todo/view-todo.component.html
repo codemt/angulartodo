@@ -1,0 +1,10 @@
+<div class="jumbotron" *ngFor="let todo of todos">
+  <h1 class="display-3">{{ todo.text }}</h1>
+  <p class="lead">{{ todo.body }} </p>
+  <hr class="my-4">
+  <p>{{ todo.due }}</p>
+  <p class="lead" >
+    <a class="btn btn-primary btn-lg" href="#" role="button" [ngStyle]="{margin: '10px'}">Edit</a>
+    <a class="btn btn-primary btn-lg" href="#" role="button" [ngStyle]="{margin: '10px'}">Delete</a>
+  </p>
+</div>
