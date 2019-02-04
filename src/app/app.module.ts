@@ -7,6 +7,7 @@ import { AddTodoComponent } from './add-todo/add-todo.component';
 import { EditTodoComponent } from './edit-todo/edit-todo.component';
 import { ViewTodoComponent } from './view-todo/view-todo.component';
 import {  HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {  HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot([
 
     { path: '', component: ViewTodoComponent},

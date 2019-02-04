@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-todo.component.css']
 })
 export class AddTodoComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+
+  log(x) {
+    console.log(x);
+  }
+
+  submit(f) {
+    console.log(f);
+
+    console.log(f.value);
+
   }
 
 }
