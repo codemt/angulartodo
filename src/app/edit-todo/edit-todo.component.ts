@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GetalltodosService } from '../Providers/getalltodos.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-edit-todo',
@@ -6,10 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit-todo.component.css']
 })
 export class EditTodoComponent implements OnInit {
-
-  constructor() { }
+  // todos: any;
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+   this.route.paramMap.subscribe(params => {
+
+
+    console.log(params);
+
+   });
   }
+
+
+  // getTodo(){
+
+  //         this.editTodo.getAllTodos().subscribe
+
+
+  // }
 
 }

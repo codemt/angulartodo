@@ -26,7 +26,7 @@ import { FormsModule } from '@angular/forms';
     { path: '', component: ViewTodoComponent},
     { path: 'create', component: AddTodoComponent},
     { path: 'edit', component: EditTodoComponent},
-    { path: 'edit', component: EditTodoComponent},
+    { path: 'edit/:id', component: EditTodoComponent},
 
 
     ])

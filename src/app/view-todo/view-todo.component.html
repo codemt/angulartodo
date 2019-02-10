@@ -4,7 +4,7 @@
   <hr class="my-4">
   <p>{{ todo.due }}</p>
   <p class="lead" >
-    <a class="btn btn-primary btn-lg" href="#" role="button" [ngStyle]="{margin: '10px'}">Edit</a>
+    <a class="btn btn-primary btn-lg" routerLink="/edit/{{todo.id}}" role="button" [ngStyle]="{margin: '10px'}">Edit</a>
     <a class="btn btn-primary btn-lg" href="#" role="button" [ngStyle]="{margin: '10px'}">Delete</a>
   </p>
 </div>

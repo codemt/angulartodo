@@ -3,14 +3,15 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class GetalltodosService {
+export class EditTodoService {
   url;
   constructor(public http: HttpClient) {
-    this.url = 'http://127.0.0.1:8000/api/ng/get/todos';
     console.log('Getting Todos...');
   }
 
-  getAllTodos() {
+  editTodo(id: any) {
+    console.log('id is ', id);
+    this.url = `http://127.0.0.1:8000/api/ng/store/todo/edit/{$id}`;
     return this.http.get(this.url);
   }
 }
